@@ -1,0 +1,228 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover beautiful destinations, travel guides and tips with Wanderly.">
+  <title>Wanderly | Explore the World</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header class="navbar">
+    <a href="#home" class="logo">✈ Wanderly<span>.</span></a>
+
+    <button class="menu-toggle" id="menuToggle"
+      aria-label="Toggle navigation" aria-expanded="false">☰</button>
+
+    <nav id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#destinations">Destinations</a>
+      <a href="#articles">Articles</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="#destinations" class="nav-button">Plan a Trip ↗</a>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">YOUR NEXT ADVENTURE STARTS HERE</p>
+        <h1>Collect Moments,<br>Not Just Miles.</h1>
+        <p>Discover extraordinary places, hidden gems and unforgettable journeys around the world.</p>
+
+        <form class="search-box" id="searchForm">
+          <input id="destinationSearch"
+            type="search" placeholder="Where do you want to go?"
+            aria-label="Search destinations">
+          <button type="submit">Explore ↗</button>
+        </form>
+
+        <p class="hero-note">✦ Find your next favourite place</p>
+      </div>
+    </section>
+
+    <section class="section" id="destinations">
+      <div class="section-heading">
+        <p class="eyebrow">EXPLORE SOMEWHERE NEW</p>
+        <h2>Places worth the journey.</h2>
+        <p>From peaceful escapes to vibrant cities, your next story awaits.</p>
+      </div>
+
+      <div class="destination-grid">
+        <article class="destination-card" data-destination="bali indonesia beach">
+          <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=900&q=85" alt="Tropical Bali landscape" loading="lazy">
+          <div class="card-info">
+            <span>INDONESIA</span>
+            <h3>Bali</h3>
+            <p>Island escapes & tropical sunsets</p>
+            <a href="#articles">Discover more ↗</a>
+          </div>
+        </article>
+
+        <article class="destination-card" data-destination="switzerland mountains nature">
+          <img src="https://images.unsplash.com/photo-1531366936337-7c912a4589a7?auto=format&fit=crop&w=900&q=85" alt="Swiss mountains under the northern lights" loading="lazy">
+          <div class="card-info">
+            <span>EUROPE</span>
+            <h3>Switzerland</h3>
+            <p>Alpine views & charming villages</p>
+            <a href="#articles">Discover more ↗</a>
+          </div>
+        </article>
+
+        <article class="destination-card" data-destination="japan tokyo culture city">
+          <img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&fit=crop&w=900&q=85" alt="Tokyo city skyline" loading="lazy">
+          <div class="card-info">
+            <span>ASIA</span>
+            <h3>Japan</h3>
+            <p>Ancient traditions meet modern life</p>
+            <a href="#articles">Discover more ↗</a>
+          </div>
+        </article>
+
+        <article class="destination-card" data-destination="italy amalfi coast europe">
+          <img src="https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=900&q=85" alt="Colourful Mediterranean coastal town" loading="lazy">
+          <div class="card-info">
+            <span>MEDITERRANEAN</span>
+            <h3>Italy</h3>
+            <p>Coastal towns & timeless beauty</p>
+            <a href="#articles">Discover more ↗</a>
+          </div>
+        </article>
+      </div>
+      <p id="searchMessage" class="search-message" aria-live="polite"></p>
+    </section>
+
+    <section class="quote-banner">
+      <p>“The world is a book, and those who do not travel read only one page.”</p>
+      <span>— A reminder to keep exploring</span>
+    </section>
+
+    <section class="section articles-section" id="articles">
+      <div class="section-heading">
+        <p class="eyebrow">THE WANDERLY JOURNAL</p>
+        <h2>Stories for the curious.</h2>
+        <p>Travel inspiration, practical advice and ideas for your next getaway.</p>
+      </div>
+
+      <div class="article-grid">
+        <article class="article-card">
+          <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=900&q=85" alt="Mountain peaks" loading="lazy">
+          <div class="article-content">
+            <span>ADVENTURE · 5 MIN READ</span>
+            <h3>A beginner's guide to mountain escapes</h3>
+            <p>What to pack, how to prepare and how to make your first mountain trip memorable.</p>
+            <a href="https://www.lonelyplanet.com/" target="_blank" rel="noopener noreferrer">Read travel guides ↗</a>
+          </div>
+        </article>
+
+        <article class="article-card">
+          <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=900&q=85" alt="Travel essentials and a map" loading="lazy">
+          <div class="article-content">
+            <span>TRAVEL TIPS · 4 MIN READ</span>
+            <h3>How to plan a trip on a budget</h3>
+            <p>Simple ways to organise your itinerary, save on transport and spend smarter.</p>
+            <a href="https://www.nomadicmatt.com/" target="_blank" rel="noopener noreferrer">Read travel guides ↗</a>
+          </div>
+        </article>
+
+        <article class="article-card">
+          <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=900&q=85" alt="Beautiful lake surrounded by mountains" loading="lazy">
+          <div class="article-content">
+            <span>INSPIRATION · 6 MIN READ</span>
+            <h3>Finding hidden gems beyond tourist spots</h3>
+            <p>Discover quieter places, meet local communities and travel at your own pace.</p>
+            <a href="https://www.atlasobscura.com/" target="_blank" rel="noopener noreferrer">Explore hidden gems ↗</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="about-section" id="about">
+      <div class="about-image"></div>
+      <div class="about-content">
+        <p class="eyebrow">A LITTLE ABOUT US</p>
+        <h2>Travel is more than a destination.</h2>
+        <p>At Wanderly, we believe every journey has a story worth telling. We bring together destination inspiration, useful travel advice and ideas to help you make the most of your time away.</p>
+        <a class="primary-button" href="#contact">Let's plan your next trip ↗</a>
+      </div>
+    </section>
+
+    <section class="newsletter">
+      <p class="eyebrow">A LITTLE INSPIRATION IN YOUR INBOX</p>
+      <h2>Your next adventure starts with a story.</h2>
+      <p>Get travel ideas, destination guides and practical tips.</p>
+      <form id="newsletterForm" class="newsletter-form">
+        <input type="email" id="newsletterEmail"
+          placeholder="Enter your email address" required>
+        <button type="submit">Join the journey ↗</button>
+      </form>
+      <p id="newsletterMessage" aria-live="polite"></p>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="contact-info">
+        <p class="eyebrow">LET'S TALK TRAVEL</p>
+        <h2>Have a trip in mind?</h2>
+        <p>Have a question, suggestion or destination to share? We'd love to hear from you.</p>
+        <p>✉ hello@wanderly.example</p>
+        <p>📍 Mumbai, India</p>
+        <p class="small-note">Demo contact details — replace them with your own.</p>
+      </div>
+
+      <form class="contact-form" id="contactForm">
+        <label for="name">Your name</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+
+        <label for="email">Email address</label>
+        <input type="email" id="email" placeholder="you@example.com" required>
+
+        <label for="subject">What would you like to discuss?</label>
+        <select id="subject" required>
+          <option value="">Choose a topic</option>
+          <option>Travel recommendations</option>
+          <option>Collaboration</option>
+          <option>Feedback</option>
+          <option>Other</option>
+        </select>
+
+        <label for="message">Your message</label>
+        <textarea id="message" rows="4" placeholder="Tell us a little more..." required></textarea>
+
+        <button type="submit" class="primary-button">Send message ↗</button>
+        <p id="contactMessage" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-main">
+      <div>
+        <a href="#home" class="logo footer-logo">✈ Wanderly<span>.</span></a>
+        <p>Go further. Feel more. Live the journey.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Explore</h4>
+        <a href="#destinations">Destinations</a>
+        <a href="#articles">Travel articles</a>
+        <a href="#about">Our story</a>
+        <a href="#contact">Contact us</a>
+      </div>
+      <div class="footer-links">
+        <h4>Find inspiration</h4>
+        <a href="https://www.lonelyplanet.com/" target="_blank" rel="noopener noreferrer">Travel guides</a>
+        <a href="https://www.atlasobscura.com/" target="_blank" rel="noopener noreferrer">Hidden places</a>
+        <a href="#newsletterForm">Travel newsletter</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> Wanderly. Made for curious travellers.</p>
+      <a href="#home">Back to top ↑</a>
+    </div>
+  </footer>
+
+</body>
+</html>
